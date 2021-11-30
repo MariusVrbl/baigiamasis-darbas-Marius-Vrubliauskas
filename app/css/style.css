@@ -1,0 +1,878 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+.site-header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    display: block;
+}
+.mobile-nav {
+    display: none;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1210px;
+    width: 100%;
+    padding: 0 20px;
+}
+.flex-container {
+    display: flex;
+}
+.site-header .container {
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav li {
+    list-style:none;
+}
+.main-nav a {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 16px;
+    text-decoration: none;
+    font-weight: normal;
+}
+.main-nav a:hover, .main-nav a:active {
+    color: green;
+}
+.logo {
+    padding: 20px 0;
+}
+
+/* HERO */
+.hero {
+    padding: 175px 0;
+    background-image: url('../images/pasirinktos\ nuotraukos/mainimage.jpg');
+    background-size: cover;
+    background-position: center;
+}
+section  > .container {
+    padding: 100px 0;
+}
+.hero-content {
+    padding: 20px;
+}
+.hero h1, .hero h4 {
+    max-width: 420px;
+}
+.hero h1 {
+    color:#fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 900;
+}
+.hero h4 {
+    color:#fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+}
+.hero a, .values-content a {
+    color:#fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: inline-block;
+    cursor:pointer;
+    width: 100px;
+    height: 30px;
+}
+.black-button {
+    background-color: #000;
+    margin-right: 12px;
+}
+.green-button {
+    background-color: #3AB54A;
+}
+
+/* BUSINESS SOLUTIONS */
+.business-solutions .container {
+    max-width: 850px;
+    width:100%;
+    margin: -100px auto;
+    padding: 30px 40px 65px 45px; 
+    background-color: #fff;
+    background-image: url("../images/pasirinktos\ nuotraukos/businesssolution.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+.business-content {
+    max-width: 350px;
+}
+.business-solutions h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.business-solutions p {
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+.business-solutions i {
+    color: #3AB54A;
+}
+
+/* OUR EXPERIENCE */
+.our-experience {
+    padding-top: 100px;
+}
+.experience-heading {
+    justify-content: space-around;
+}
+.experience-heading h1 {
+    font-family: 'Lato', sans-serif;
+    color: #3AB54A;
+    font-size: 45px;
+    max-width: 400px;
+    width: 100%;
+}
+.experience-heading p {
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    font-size: 13px;
+    max-width: 450px;
+    padding-top: 100px;
+}
+.experience-statistics ul {
+    list-style: none;
+    justify-content: space-around;
+    text-align: center;
+}
+.experience-statistics h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+}
+.experience-statistics p {
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    font-size: 15px;
+}
+
+/* Visi h2 kartu, bet visu pirmo zodzio spalva pakeista i zalia html faile. */
+.services-heading h2, .news-heading h2, .contact-heading h2, .values-heading h2 {
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* COMPANY VALUE */
+.company-value {
+    background-color: #F6FFF7;
+    background-image: url('../images/pasirinktos\ nuotraukos/greenrectangle.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+.company-value .container {
+    justify-content: space-between;
+}
+.values-content {
+    flex-direction: column;
+    max-width: 400px;
+}
+.values-heading p {
+    margin-top: 50px;
+}
+.values-content ul {
+    list-style: none;
+    padding: 0;
+}
+.company-value img {
+    max-width: 600px;
+    width: 100%;
+}
+
+.values-heading p, .values-content ul li {
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    font-size: 13px;
+}
+/* VALUES mygtukas hero daly - .hero a */
+
+
+/*OUR SERVICES */
+.services-heading, .news-heading, .contact-heading {
+    text-align: center;
+}
+.services-content, .news-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 290px;
+    
+}
+.service {
+    display: flex;
+    max-width: 265px;
+    margin: 80px auto 0;
+}
+.service h3 {
+    font-family: 'Lato', sans-serif;
+}
+.service p {
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    font-size: 13px;
+}
+.service i {
+    color: #3AB54A;
+    font-size: 60px;
+    padding: 20px;
+}
+
+/* OUR CUSTOMERS */
+.our-customers {
+    background-color: #3AB54A;
+    color: #fff;
+    padding-bottom: 100px;
+}
+.our-customers .container {
+    justify-content: center;
+    text-align: center;
+}
+.our-customers .customers-content {
+    max-width: 550px;
+    width: 100%;
+}
+.our-customers h1 {
+    font-family: 'Lato', sans-serif;
+    max-width: 500px;
+    width: 100%;
+}
+.our-customers p {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;   
+}
+
+/* QUOTATION */
+.quotation .container {
+    color:#fff;
+    max-width: 850px;
+    width:100%;
+    margin: -100px auto;
+    padding: 30px 40px 75px 85px;
+    background-image: url("../images/pasirinktos\ nuotraukos/Rudhisasmito.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.quotation .quote {
+    max-width: 540px;
+    padding: 50px;
+}
+.quotation .quote p:first-child {
+    font-family: 'Roboto', sans-serif;
+    font-style:italic;
+    font-size: 18px;
+}
+.quotation .quote p:nth-child(2) {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    padding-top: 15px;
+}
+.quotation .quote p:last-child {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-style:italic;
+}
+
+/* LOGOIPSUM */
+.logoipsum .container {
+    padding: 200px 0 0 0;  
+}
+.logoipsum-content {
+    display: flex;
+    justify-content: space-between;  
+}
+
+/* RECENT NEWS */
+.recent-news .container {
+    padding-top: 80px;
+}
+.news, .news img {
+    max-width: 290px;
+    width: 100%;
+    margin: 40px auto 0;
+}
+.news p {
+    font-family: 'Open Sans', sans-serif;
+    color: #666;
+    font-size: 13px;
+}
+.news a {
+    color: #3AB54A;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+/* CONTACT FORM */
+.contact-us {
+    background-color: #3AB54A;
+}
+.contact-us .container {
+    padding-bottom: 60px;
+}
+.contact-heading p {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 13px;
+    margin: 80px auto;
+}
+.contact-us .contact-content {
+    width: 80%;
+    max-width: 860px;
+    margin: 80px auto;
+}
+.contact-us .contact-content .contact-form .input-row {
+    margin-bottom: 30px;
+}
+.contact-us .contact-content .contact-form .input-row input {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    width:calc(50% - 18px);
+}
+.contact-us .contact-content .contact-form .input-row input:first-child {
+    margin-right: 16px;
+}
+.contact-us .contact-content .contact-form .input-row input:last-child {
+    margin-left: 16px;
+}
+.contact-us .contact-content .contact-form textarea {
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    padding: 15px;
+}
+.btn {
+    font-size: 25px;
+    border-radius: 5px;
+    border: none;
+    color:#3AB54A;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 25px;
+    margin: 10px auto 0;
+    cursor:pointer;
+}
+.btn:hover, .btn:active {
+    color: #fff;
+}
+/* FOOTER */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+.social-media, .our-company, .useful-links, .contact-info {
+    max-width: 180px;
+    width: 100%;
+}
+.footer h3 {
+    font-family: 'Lato', sans-serif;
+}
+.footer p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    margin: 35px 0;
+}
+.footer ul, .footer a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+.footer .our-company ul li, .useful-links ul li, .contact-info ul li {
+    margin: 22px 0;
+    line-height: 20px;
+}
+.footer .social-media ul, .our-company ul, .useful-links ul, .contact-info ul {
+    margin:0;
+    padding: 15px 0;
+    font-size: 13px;
+}
+.footer .our-company i, .useful-links i {
+    font-size: 10px;
+}
+.social-media ul {
+    justify-content: space-between;
+}
+.social-media ul i {
+    font-size: 17px;
+}
+.footer .contact-info ul li i {
+    font-size: 17px;
+    color: #3AB54A;
+    margin-right: 10px;
+}
+.footer-bottom {
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+/* MEDIA 1400px */
+@media screen and (max-width: 1400px) {  
+    
+    /* site-header */
+    .site-header .logo img {
+        width: 150px;
+    }
+    .site-header a {
+        font-size: 13px;
+    }
+    
+    /* hero */
+    .hero {
+        padding: 80px 0;
+    } 
+    
+    /* business solutions */
+    .business-solutions .container {
+        max-width: 600px;
+        width:100%;
+        padding: 20px 30px 25px 30px; 
+    }
+    .business-content {
+        max-width: 300px;
+    }
+    .business-solutions h2 {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    .business-solutions p {
+        font-size: 10px;
+    }
+   
+    /* OUR EXPERIENCE */
+    .our-experience {
+        padding-top: 30px;
+        padding: 20px;
+    }
+    .experience-heading h1 {
+        font-size: 35px;
+        max-width: 350px;
+        width: 100%;
+    }
+    .experience-heading p {
+        font-size: 10px;
+        max-width: 350px;
+        padding-top: 100px;
+    }
+    .experience-statistics h1 {
+        font-size: 40px;
+    }
+    .experience-statistics p {
+        font-size: 10px;
+    }
+    
+    /* Visi h2 */
+    .services-heading h2, .news-heading h2, .contact-heading h2, .values-heading h2 {
+        font-size: 26px;   
+    }
+
+    /* COMPANY VALUE */
+    .company-value .container {
+        padding: 20px;
+    }
+    .values-content {
+        max-width: 300px;
+    }
+    .company-value img {
+        padding: 23px 0;
+        max-width: 500px;
+    }
+    .values-heading p, .values-content ul li {
+        font-size: 10px;
+    }
+
+    /*OUR SERVICES */
+    .services-content, .news-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 120px 200px; 
+    }
+    .service {
+        display: flex;
+        max-width: 210px;
+        margin: 40px auto 0;
+    }
+    .service h3 {
+        font-size: 15px;
+    }
+    .service p {
+        font-size: 10px;
+    }
+    .service i {
+        font-size: 40px;
+    }
+
+    /* OUR CUSTOMERS */
+    .our-customers {
+        padding-bottom: 40px;
+    }
+    .our-customers .customers-content {
+        max-width: 400px;
+        width: 100%;
+    }
+    .our-customers h1 {
+        font-size: 30px;
+        max-width: 350px;
+        width: 100%;
+    }
+    .our-customers p {
+        font-size: 10px;
+    }
+
+    /* QUOTATION */
+    .quotation .container {
+        max-width: 600px;
+        width:100%;
+        padding: 20px 30px 25px 30px; 
+    }
+    .quotation .quote {
+        max-width: 540px;
+        padding: 50px;
+    }
+    .quotation .quote p:first-child {
+        font-size: 14px;
+    }
+    .quotation .quote p:nth-child(2) {
+        font-size: 11px;
+        padding-top: 10px;
+    }
+    .quotation .quote p:last-child {
+        font-size: 9px;
+    }
+
+     /* LOGOIPSUM */ 
+    .logoipsum .container {
+        padding: 170px 0 0 0;  
+    }
+    .logoipsum-content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .logoipsum-content img {
+        max-width: 180px;
+    }
+
+    /* RECENT NEWS */
+    .recent-news .container {
+        padding-top: 25px;
+    }
+    .news, .news img {
+        max-width: 255px;
+        width: 100%;
+        margin:15px auto 0;
+    }
+    .news p {
+        font-size: 10px;
+    }
+    .news a {
+        font-size: 10px;
+    }
+
+    /* CONTACT FORM */
+    .contact-us .container {
+        padding-bottom: 40px;
+    }
+    .contact-heading p {
+        font-size: 10px;
+        margin: 40px auto;
+    }
+    .contact-us .contact-content {
+        max-width: 660px;
+        margin: 40px auto;
+    }
+    .contact-us .contact-content .contact-form .input-row {
+        margin-bottom: 30px;
+    }
+    .contact-us .contact-content .contact-form .input-row input {
+        padding: 12px;
+        width:calc(50% - 14px);
+        font-size: 14px;
+    }
+    .contact-us .contact-content .contact-form .input-row input:first-child {
+        margin-right: 12px;
+    }
+    .contact-us .contact-content .contact-form .input-row input:last-child {
+        margin-left: 12px;
+    }
+    .contact-us .contact-content .contact-form textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+    .btn {
+        font-size: 15px;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 30px 0;
+    }
+    .footer img {
+        width: 150px;
+    }
+    .footer-content {
+        margin: 30px auto;
+    }
+    .footer h3 {
+        font-size: 15px;
+    }
+    .footer p {
+        font-size: 10px;
+        margin: 35px 0;
+    }
+    .footer ul, .footer a {
+        font-size: 10px;
+    }
+    .footer .our-company ul li, .useful-links ul li, .contact-info ul li {
+        line-height: 13px;
+    }
+    .footer .social-media ul, .our-company ul, .useful-links ul, .contact-info ul {
+        font-size: 10px;
+    }
+    .footer .our-company i, .useful-links i {
+        font-size: 10px;
+    }
+    .social-media ul i {
+        font-size: 15px;
+    }
+    .footer .contact-info ul li i {
+        font-size: 15px;
+    }
+    .footer-bottom {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 1020px) {
+    .company-value img {
+        padding: 35px 0;
+        max-width: 450px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .company-value img {
+        padding: 65px 0;
+        max-width: 350px;
+    }
+}
+@media screen and (max-width: 800px) {
+    
+    /* MOBILE NAV */
+    .main-nav {
+        display: none;
+    }
+    .site-header .container {
+        display: block;
+    }
+    .logo {
+        float: left;
+    }
+    .mobile-nav {
+        position: relative;
+        width: 100%;
+        display: block;
+    }
+    .mobile-nav li {
+        list-style: none;
+    }
+    
+    .mobile-nav ul {
+        flex-direction: column;
+        position: absolute;
+        width: auto;
+        top: 60px;
+        right: -20px;
+        padding: 20px;
+        background-color: #fff;
+        align-items: flex-end;
+    }
+    
+    .mobile-nav a {
+        color: #000;
+        font-size: 13px;
+        text-decoration: none;
+        margin: 0 5px;
+        padding: 10px 15px;
+        display: block;
+    }
+    
+    .mobile-nav a:hover, .mobile-nav a:active, .mobile-nav a.icon:hover, .mobile-nav a.icon:active {
+        color: #fff;
+        background-color: #3AB54A;
+    }
+    .mobile-nav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 12px;
+        color: #000;
+        font-size: 29px;
+    }
+    /* ELSE */
+    .business-solutions .container {
+        max-width: 500px;
+        width:100%;
+        background-image: none;
+    }
+    .business-content {
+        max-width: 400px;
+    }
+    .business-solutions i {
+        display: none;
+    }
+    .company-value img {
+        padding: 65px 0;
+        max-width: 320px;
+    }
+    .quotation .container {
+        max-width: 500px;
+        background-image: none;
+        background-color: #fff;
+        color: #000;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    }
+    .logoipsum-content img {
+        max-width: 150px;
+    }
+    .news, .news img {
+        max-width: 200px;
+    }
+    .footer img {
+        width: 120px;
+    }
+    .social-media, .our-company, .useful-links, .contact-info {
+        max-width: 140px;
+        width: 100%;
+    }  
+}
+@media screen and (max-width: 690px) {
+    .experience-heading h1 {
+        font-size: 30px;
+        max-width: 200px;   
+    }
+    .experience-heading p {
+        max-width: 200px;
+        padding-top: 20px;
+    }
+    .experience-statistics h1 {   
+        font-size: 30px;
+    }
+    .company-value {
+        background-image: none;
+    }
+    .company-value .container {
+        justify-content: center;
+        text-align: center;
+    }
+    .company-value img {
+        display: none;
+    }
+    .values-content a {
+        margin-left: 100px;  
+    }
+     .services-content {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr); 
+    }
+    .news-content {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr); 
+    }
+    .logoipsum-content {
+        flex-wrap: wrap;
+        justify-content: center;  
+    }
+    
+    .social-media, .our-company, .useful-links, .contact-info {
+        max-width: 100px;
+    }
+    .footer-content .social-media ul{
+        flex-direction: column;
+        margin: 0 10px;
+    }
+    .footer-content .social-media ul li {
+        line-height: 25px;
+    }
+    .footer img {
+        width: 90px;
+    }
+    .footer .contact-info i {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .experience-heading h1 {
+        font-size: 25px;
+        max-width: 150px;   
+    }
+    .experience-heading p {
+        max-width: 150px; 
+        padding-top: 20px;
+    }
+    .services-content {
+        padding-right: 20px;
+    }
+    .services-content .service i {
+        font-size: 25px;
+    }
+    .our-customers {
+        padding: 0 20px 80px 20px;
+
+    }
+    .our-customers .customers-content {
+        max-width: 350px;
+    }
+    .our-customers h1 {
+        font-size: 25px;
+    }
+    .news, .news img {
+        max-width: 150px;
+        width: 100%;
+        margin:15px auto 0;
+    }
+    .footer img {
+        width: 75px;
+    }
+    .footer h3 {
+        font-size: 13px;
+    }
+    .footer p {
+        max-width: 50px;
+    }
+    .footer .our-company ul li, .useful-links ul li, .contact-info ul li {
+        line-height: auto;
+    }
+    .our-company i, .useful-links i {
+        display: none;
+    }
+}
+
+    
+    
+
